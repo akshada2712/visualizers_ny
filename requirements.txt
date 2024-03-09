@@ -7,4 +7,3 @@ numpy
 geopy
 streamlit_agraph
 matplotlib
-openpyxl
