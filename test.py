@@ -55,8 +55,8 @@ st.header("Mapping New York: Exploring Geographic Patterns with Artists")
 st.markdown("Navigating the Cartographic Canvas: Unveiling the Urban Tapestry. From the bustling streets of urban jungles to the serene expanses of rural vistas, each pin on the map tells a tale of human presence. In the heart of metropolitan hubs, clusters of applicants converge, echoing the rhythm of city life. Yet, as we venture into the quiet countryside, lone markers dot the landscape, whispering tales of solitude and untapped potential.")
 
 
-loc_file = 'https://raw.githubusercontent.com/akshada2712/visualizers_ny/main/locations.txt'
-county_count_file = 'https://raw.githubusercontent.com/akshada2712/visualizers_ny/main/countyCount.txt'
+loc_file = 'locations.txt'
+county_count_file = 'countyCount.txt'
 with open(loc_file) as json_file:
     county_coordinates = json.load(json_file)
 
