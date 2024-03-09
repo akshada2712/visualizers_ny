@@ -17,7 +17,7 @@ st.title("The Visualizers")
 #st.write(data)
 
 st.header("Empowering New York's artists, CRNY's Guaranteed Income for Artists initiative fosters creativity and resilience with steadfast support")
-data  = pd.read_excel('GI and POA Survey Data (1).xlsx', engine='openpyxl')
+data  = pd.read_excel('https://raw.githubusercontent.com/akshada2712/visualizers_ny/main/GI and POA Survey Data (1).xlsx', engine='openpyxl')
 st.markdown("Creatives Rebuild New York (CRNY), launched in January 2021 with the generous backing of the Mellon Foundation, stands as a beacon of hope for New York's beleaguered arts and culture community in the wake of the COVID-19 pandemic. With a steadfast commitment to addressing the systemic inequities plaguing our cultural landscape, CRNY has rolled out innovative programs like the Guaranteed Income for Artists and Artist Employment initiatives. Through these initiatives, individual artists across New York State receive vital support, enabling them to pursue their craft with renewed vigor and without the burden of financial insecurity. The Guaranteed Income for Artists program, with its unencumbered $1,000 monthly stipend over 18 months, not only acknowledges the invaluable contributions of artists but also fosters a sense of solidarity and interconnectedness within the artistic community. As we navigate the path to recovery, the data collected from program participants and applicants serves as a crucial resource, informing our efforts to build a more inclusive and resilient arts ecosystem. The collaboration between CRNY and the Arts, Entrepreneurship, and Innovation Lab at the Center for Cultural Affairs represents a pivotal step towards leveraging data visualization to amplify the impact of these initiatives. In this story we would be crafting insights for how the artists are navigating labour market and the artistic disciplines.")
 
 
@@ -55,8 +55,8 @@ st.header("Mapping New York: Exploring Geographic Patterns with Artists")
 st.markdown("Navigating the Cartographic Canvas: Unveiling the Urban Tapestry. From the bustling streets of urban jungles to the serene expanses of rural vistas, each pin on the map tells a tale of human presence. In the heart of metropolitan hubs, clusters of applicants converge, echoing the rhythm of city life. Yet, as we venture into the quiet countryside, lone markers dot the landscape, whispering tales of solitude and untapped potential.")
 
 
-loc_file = 'locations.txt'
-county_count_file = 'countyCount.txt'
+loc_file = 'https://raw.githubusercontent.com/akshada2712/visualizers_ny/main/locations.txt'
+county_count_file = 'https://raw.githubusercontent.com/akshada2712/visualizers_ny/main/countyCount.txt'
 with open(loc_file) as json_file:
     county_coordinates = json.load(json_file)
 
