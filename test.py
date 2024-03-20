@@ -10,12 +10,15 @@ import json
 import time
 import os
 
+
+
 start_time = time.time()
 
 
 st.title("The Visualizers")
 
-#st.write(data)
+
+# Fix for file access error 
 
 folder = os.getcwd()
 
@@ -31,7 +34,7 @@ st.header("Arts Sectors Linked to Broader Societal Innovation")
 st.subheader("Exploring Race/Ethnicity Distribution Across Gender and Language")
 st.markdown("In today's diverse society, understanding the distribution of race and ethnicity across different demographic groups is crucial for promoting inclusivity and equity. In this analysis, we delve into the intricate relationship between race/ethnicity, gender, and language using a violin plot visualization.")
 
-import plotly.graph_objects as go
+
 
 
 # Violin plot
@@ -123,9 +126,6 @@ st.markdown("Understanding the geographic distribution of applicants through an 
 
 st.header("Exploring Artistic Practices: Solitude vs. Collaboration")
 
-import streamlit as st
-import plotly.graph_objects as go
-import time
 
 start_time = time.time()
 
@@ -230,8 +230,7 @@ fig.update_layout(
 
 
 ################Transparent plots##########################
-import streamlit as st
-import plotly.graph_objects as go
+# color scheme 
 
 colors = ['#1f77b4', '#ff7f0e', '#2ca02c', '#d62728', '#9467bd', '#8c564b', '#e377c2', '#7f7f7f']
 
@@ -275,18 +274,8 @@ st.markdown("The life of an artist is often a precarious one, with income source
 ############################################################
 
 
+# Data Manupulation
 
-
-
-
-
-
-
-
-
-import streamlit as st
-import pandas as pd
-import plotly.express as px
 
 # Drop rows with missing values in relevant columns
 wages_data = df.dropna(subset=['p10_earnmoney1','p10_earnmoney2', 'p10_earnmoney3', 'p10b_wagespaid1','p_agerange', 'p41_gender1'])
